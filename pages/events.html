@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Sport Gaming Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="navbar"></div>
+
+
+
+    <ul>  
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sign in.html">sign in</a></li>
+        <li><a href="checkout.html">checkout</a></li>
+        <li><a href="carousel.html">Gallery</a></li>
+                      
+      </ul>
+
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        
+        
+        body {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          line-height: 1.5;
+          background-color: #f2f2f2;
+        }
+        
+        
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+        }
+        
+        header h1 {
+          margin: 0;
+        }
+        
+        
+        
+        
+        main {
+          margin: 20px;
+        }
+        
+        section {
+          margin: 20px 0;
+        }
+        
+        section h2 {
+          margin-bottom: 10px;
+        }
+        
+        ul {
+          list-style:none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        li {
+          background-color: #ffffff;
+          border: 1px solid #c2bebe;
+          padding: 20px;
+          margin-bottom: 10px;
+        }
+        
+        li h3 {
+          margin-bottom: 20px;
+        }
+        
+        li p {
+          margin-bottom: auto;
+        }
+        
+        li a {
+          display: auto;
+          background-color: #ffffff;
+          color: #141414;
+          padding: 5px 10px;
+          border-radius: 5px;
+          text-decoration: none;
+          text-transform: uppercase;
+          justify-content:space-between;
+        }
+        
+        li a:hover {
+          background-color: #868585;
+          color: #0c0c0c;
+        }
+        
+        
+        form {
+          background-color: #ffffff;
+          border: 1px solid #ccc;
+          padding: 20px;
+        }
+        
+        label {
+          display: block;
+          margin-bottom: 10px;
+        }
+        
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #999999;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+        
+        button[type="submit"] {
+          display: block;
+          background-color: #6b0d0d;
+          color: #fa0f0f;
+          padding: 5px 10px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+          background-color: #b81a1a;
+          color: #b81313;
+        }
+
+        
+
+              .image{
+                width:100%;
+                height: 60%;
+                display:bottom;
+                place-content:center;
+            }
+            .image img{
+                width: 450px;
+            }
+            .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+        </style>
+    <header>
+      <h1>E-Sport Gaming Events</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#upcoming-events">Upcoming Events</a></li>
+        <li><a href="#tomorrow-events">Past Events</a></li>
+        
+      </ul>
+    </nav>
+    <main>
+      <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>
+            <div class="image">
+                          <img src="../images/rainbow.jpg" alt="">
+                      </div>
+            <h3>Rainbow Six Siege: 5v5</h3>
+            <p>Date: February 28, 2023</p>
+            <p>Location: Online</p>
+            <p>Description: The Rainbow Six Siege community is a passionate and dedicated one, and events centered around the game are always highly anticipated. These events often involve professional teams from around the world competing for huge cash prizes, as well as exciting displays of new content and updates from Ubisoft themselves. Events like the Six Invitational, Pro League, and Major tournaments bring together the top teams and players from across the globe to compete in thrilling matches, with millions of fans tuning in to watch online. These events are a showcase of the game's competitive scene, and often offer unique opportunities for fans to connect with the players, developers, and other members of the community.</p>
+            <a href="sign in.html">Register</a>
+          </li>
+          <li>
+            <div class="image">
+              <img src="../images/csgo.jpg" alt="">
+          </div>
+            <h3>Counter Strike: Global Offensive 5v5</h3>
+            <p>Date: March 15, 2023</p>
+            <p>Location: Los Angeles, California</p>
+            <p>Counter-Strike: Global Offensive (CS:GO) is a popular first-person shooter game that has been enjoyed by players around the world for many years. CS:GO tournaments bring together the best players and teams from different regions to compete against each other in high-stakes, intense matches. A CS:GO tournament typically consists of several rounds of gameplay, with each round consisting of multiple matches. The tournament format can vary depending on the event, but it usually involves a combination of group stage and knockout stage matches. The top teams from each group advance to the knockout stage, where they play single-elimination matches until only one team is left standing.
+
+                CS:GO tournaments are known for their high level of skill and strategic play, with players using teamwork and precision to outmaneuver and outshoot their opponents. The game's fast-paced gameplay, combined with the need for strategic planning and execution, makes for an exciting and engaging viewing experience.</p>
+            <a href="sign in.html">Register</a>
+          </li>
+        </ul>
+      </section>
+      <section id="tomorrow-events">
+        <h2>Past Events</h2>
+        <ul>
+          <li>
+            <div class="image">
+              <img src="../images/rl.jpg" alt="">
+          </div>
+            <h3>Rocket League: 3v3: Winners-Team Blue</h3>
+            <p>Date: February 14, 2023</p>
+            <p>Location: Online</p>
+            <p>Rocket League is a fast-paced, high-energy game that combines soccer with high-tech vehicles, and its tournaments are just as thrilling. Rocket League tournaments bring together the world's top players and teams to compete in exciting matches that test their skills and strategies. Overall, a Rocket League tournament is a high-octane, competitive event that showcases the best that the game has to offer. With skillful gameplay, exciting goals, and a passionate fanbase, it's no wonder that Rocket League tournaments are some of the most exhilarating esports events around.</p>
+            <a href="contacts.html">View Results</a>
+          </li>
+          <li><div class="image">
+            <img src="../images/apex.jpg" alt="">
+        </div>
+            <h3>Apex Legends: Duos: Winner-Team Yellow</h3>
+            <p>Date: January 31, 2023</p>
+            <p>Location: San Francisco, California</p>
+            <p>Apex Legends tournaments are high-stakes competitions that bring together some of the best players in the game. These tournaments typically feature teams of three players, who compete against each other in a series of matches. The matches are played on a variety of maps, with the goal of being the last team standing at the end of each round.
+
+                The most prestigious Apex Legends tournaments offer significant prize pools, with top teams earning thousands of dollars in prize money. In addition to the monetary rewards, these tournaments provide an opportunity for players to showcase their skills and compete against other top-tier players.</p>
+            <a href="contacts.html">View Results</a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact-us">
+        
+      </section>
+    </main>
+    <div class="b-example-divider"></div>
+      
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="../pages/shop.html" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="../pages/about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">&copy; 2023 Company, Inc</p>
+        </footer>
+      </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
